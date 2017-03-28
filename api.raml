@@ -1,0 +1,14 @@
+#%RAML 1.0
+
+title: this is a test
+types:
+  Hey: !include things/hola.raml
+
+
+/hello:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: Hey
